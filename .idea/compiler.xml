@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
-        <module name="Api-gateway" />
         <module name="payment-service" />
         <module name="vehicle-service" />
         <module name="reservation-service" />
+        <module name="api-gateway" />
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="parking-service" />
@@ -19,7 +19,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Api-gateway" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="parking-service" options="-parameters" />
