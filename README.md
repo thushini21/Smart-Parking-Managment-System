@@ -1,4 +1,6 @@
 Smart Parking Management System 🚗
+
+
 A Microservices-based system developed with Spring Boot, Spring Cloud, Eureka, and JWT Security.
 It manages user registration, vehicle entry/exit, parking space allocation, reservations, and payments using a secure and scalable architecture.
 
