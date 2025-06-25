@@ -10,13 +10,15 @@
         <module name="config-server" />
         <module name="payment-service" />
         <module name="vehicle-service" />
-        <module name="reservation-service" />
         <module name="api-gateway" />
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="parking-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="reservation-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

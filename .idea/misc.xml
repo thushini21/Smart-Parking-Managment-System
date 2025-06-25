@@ -19,6 +19,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/reservation-service/pom.xml" />
       </set>
     </option>
   </component>
