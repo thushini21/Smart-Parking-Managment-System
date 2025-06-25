@@ -1,4 +1,4 @@
-package com.example.paymentserver.config;
+package com.example.parkingserver.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,15 +13,15 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // Disable CSRF for APIs
+                .csrf(csrf -> csrf.disable()) // Disable CSRF (recommended for stateless REST APIs)
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll() // Allow all requests without auth
+                        .anyRequest().permitAll() // Permit all requests (no authentication)
                 );
         return http.build();
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(); // Secure password hashing
     }
 }
