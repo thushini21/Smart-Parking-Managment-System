@@ -27,10 +27,12 @@ Smart-Parking-Management-System/
 
 
 How to Run
-Start eureka server
-Start all microservices
-Open Postman and use the below collection to test endpoints
-Visit http://localhost:8761 to verify service registration
+
+
+* Start eureka server
+* Start all microservices
+* Open Postman and use the below collection to test endpoints
+* Visit http://localhost:8761 to verify service registration
 
 ![eureka dashboard ss](https://github.com/user-attachments/assets/dcec032c-e0b6-4260-acca-c7f3134c9fd7)
 
