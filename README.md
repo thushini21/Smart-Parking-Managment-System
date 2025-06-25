@@ -38,21 +38,39 @@ How to Run
 
 
 🧪 Technologies Used
+
+
 Java 21
+
 Spring Boot
+
 Spring Cloud Gateway
+
 Spring Security 
+
 Eureka Discovery
+
 RestTemplate / WebClient
+
 MySQL
+
 Lombok
+
 Postman
 
+
 Features
+
 Real-time parking space availability tracking
+
 Dynamic space allocation
+
 Digital transactions and booking receipts
+
 User authentication and authorization
+
 Vehicle tracking and management
+
 Payment processing
+
 Historical logs and analytics
