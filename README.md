@@ -37,7 +37,12 @@ How to Run
 ![eureka dashboard ss](https://github.com/user-attachments/assets/dcec032c-e0b6-4260-acca-c7f3134c9fd7)
 
 
-The API documentation is available in the Postman collection: [Postman Collection](https://www.postman.com/collections/[https://web.postman.co/workspace/b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-0d07806e-cadc-4c83-9689-d5f807f6a8b5?action=share&source=copy-link&creator=40735357]
+## 📬 API Documentation
+
+The API documentation is available in the Postman collection:  
+👉 [View Postman Collection](https://www.postman.com/collections/https://web.postman.co/workspace/b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-0d07806e-cadc-4c83-9689-d5f807f6a8b5?action=share&source=copy-link&creator=40735357)
+
+
 
 🧪 Technologies Used
 
