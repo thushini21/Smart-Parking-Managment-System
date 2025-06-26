@@ -1,22 +1,26 @@
 {
 	"info": {
-		"_postman_id": "8ea081a9-da94-4edb-86ea-c2632b694efc",
-		"name": "SMART PARKING MANAGEMENT",
+		"_postman_id": "caf3fd46-a096-4eeb-8892-06f9cecde469",
+		"name": "spms",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40383733"
+		"_exporter_id": "40735357",
+		"_collection_link": "https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=collection_link&creator=40735357"
 	},
 	"item": [
 		{
 			"name": "User",
 			"item": [
 				{
-					"name": "Create New User",
+					"name": "create new user",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"johdonnne@example.com\",\r\n  \"password\": \"123\",\r\n  \"name\": \"John\",\r\n  \"role\": \"ROLE_USER\",\r\n  \"phoneNumber\": \"0771234567\",\r\n  \"address\": \"123 Main St\"\r\n}\r\n",
+							"raw": "{\n  \"email\": \"janedoe@example.com\",\n  \"password\": \"securePass123\",\n  \"name\": \"Jane\",\n  \"role\": \"ROLE_USER\",\n  \"phoneNumber\": \"0712345678\",\n  \"address\": \"456 Park Avenue\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -42,9 +46,6 @@
 				{
 					"name": "Get All Users",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -64,39 +65,29 @@
 					"response": []
 				},
 				{
-					"name": "Get User by ID",
+					"name": "Get User By Id",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8081/api/users/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8081",
-							"path": [
-								"api",
-								"users",
-								"1"
-							]
-						}
+						"header": []
 					},
 					"response": []
 				},
 				{
 					"name": "Delete User",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8081/api/users/2",
+							"raw": "http://localhost:8081/api/users/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -105,23 +96,20 @@
 							"path": [
 								"api",
 								"users",
-								"2"
+								"5"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Login User by Email & Password",
+					"name": "Login User By Email & password",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"johdoe@example.com\",\r\n  \"password\": \"123\"\r\n}",
+							"raw": "{\r\n  \"email\": \"johdoe@example.com\",\r\n  \"password\": \"$2a$10$0OoG0RkgcI7gLEwPoPa4f.wP.7Zq5MeHXKH0nX9Z3kUOfXRVQqor2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -147,14 +135,11 @@
 				{
 					"name": "Update User",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"johdoe@example.com\",\r\n  \"password\": \"123\",\r\n  \"name\": \"LIHINI\",\r\n  \"role\": \"ROLE_USER\",\r\n  \"phoneNumber\": \"0771234567\",\r\n  \"address\": \"123 Main St\"\r\n}\r\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -162,7 +147,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/api/users/1",
+							"raw": "http://localhost:8081/api/users/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -171,7 +156,7 @@
 							"path": [
 								"api",
 								"users",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -180,10 +165,80 @@
 			]
 		},
 		{
-			"name": "Vehical",
+			"name": "Parking Space",
 			"item": [
 				{
-					"name": "Get All Vehicles",
+					"name": "get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/parking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Parking Spaces",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"location\": \"Zone A2\",\r\n  \"isAvailable\": true,\r\n  \"hourlyRate\": 100.00,\r\n  \"ownerId\": \"OWNER003\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/parking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Parking Space by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/parking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Parking Spaces",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -199,6 +254,108 @@
 								}
 							}
 						},
+						"url": {
+							"raw": "http://localhost:8083/api/parking/available",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking",
+								"available"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Parking Spaces by Owner ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/parking/owner/OWNER001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking",
+								"owner",
+								"OWNER001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Parking Spaces",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/parking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Parking Spaces",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/parking/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"parking",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "Get All Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
 						"url": {
 							"raw": "http://localhost:8082/api/vehicles/getAll",
 							"protocol": "http",
@@ -216,7 +373,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Vehicle by ID",
+					"name": "Get All Vehicles by ID",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -261,14 +418,11 @@
 				{
 					"name": "Create New Vehicle",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"licensePlate\": \"ABC-1234\",\r\n  \"model\": \"Toyota Aqua\",\r\n  \"color\": \"Blue\",\r\n  \"userId\": \"1\"\r\n}\r\n",
+							"raw": "{\r\n  \"licensePlate\": \"ABC-1234\",\r\n  \"model\": \"Toyota Aqua\",\r\n  \"color\": \"Blue\",\r\n  \"userId\": \"1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -298,7 +452,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"licensePlate\": \"ABC-1234\",\r\n  \"model\": \"Nissan Leaf\",\r\n  \"color\": \"White\",\r\n  \"userId\": \"U001\",\r\n  \"currentParkingSpaceId\": 3\r\n}\r\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -382,175 +536,6 @@
 								"vehicles",
 								"1",
 								"parking-space\n"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Parking Space",
-			"item": [
-				{
-					"name": "getAll",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/api/parking",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Parking Space by ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/api/parking/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Available Parking Spaces",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/api/parking/available",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking",
-								"available"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Parking Spaces by Owner ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/api/parking/owner/OWNER001",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking",
-								"owner",
-								"OWNER001"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create New Parking Space",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"location\": \"Zone A1\",\r\n  \"isAvailable\": true,\r\n  \"hourlyRate\": 150.00,\r\n  \"ownerId\": \"OWNER001\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8083/api/parking",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Parking Space",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"location\": \"Zone A2\",\r\n  \"isAvailable\": true,\r\n  \"hourlyRate\": 175.00,\r\n  \"ownerId\": \"OWNER001\",\r\n  \"currentVehicleId\": \"V001\"\r\n}\r\n\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8083/api/parking/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Parking Space",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/api/parking/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"api",
-								"parking",
-								"2"
 							]
 						}
 					},
@@ -701,7 +686,10 @@
 					"name": "Update Payment by ID",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				},
