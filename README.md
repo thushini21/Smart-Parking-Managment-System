@@ -37,7 +37,11 @@ How to Run
 ![eureka dashboard ss](https://github.com/user-attachments/assets/dcec032c-e0b6-4260-acca-c7f3134c9fd7)
 
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=collection_link&creator=40735357)
+## 📬 Postman Collection
+
+You can test the API using the following Postman collection:
+
+[👉 Click here to open the Postman Collection](https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=collection_link&creator=40735357)
 
 
 
