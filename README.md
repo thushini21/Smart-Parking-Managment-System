@@ -37,8 +37,9 @@ How to Run
 ![eureka dashboard ss](https://github.com/user-attachments/assets/dcec032c-e0b6-4260-acca-c7f3134c9fd7)
 
 
-## 🔗 Postman Collection
-https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=copy-link&creator=40735357
+## 📦 Postman Collection
+
+🔗 [View Postman Collection JSON](./docs-ss/postman/spms-postman-collection.json)
 
 			
 		
