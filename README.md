@@ -38,13 +38,7 @@ How to Run
 
 
 ## 🔗 Postman Collection
-
-You can test the API using the following Postman collection:
-
-👉 [Download Local Postman Collection](./postman/postman-collection.json)
-
-📡 Or access it via Postman Shareable Link:  
-[Open in Postman](https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=collection_link&creator=40735357)
+https://bn6666.postman.co/workspace/-bn-Workspace~b46634b4-6556-44ff-8b8d-3efdfa8d759f/collection/40735357-caf3fd46-a096-4eeb-8892-06f9cecde469?action=share&source=copy-link&creator=40735357
 
 			
 		
