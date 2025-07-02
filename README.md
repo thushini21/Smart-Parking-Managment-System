@@ -37,9 +37,9 @@ How to Run
 ![eureka dashboard ss](https://github.com/user-attachments/assets/dcec032c-e0b6-4260-acca-c7f3134c9fd7)
 
 
-## 📦 Postman Collection
+The API documentation is available in the Postman collection:
+[Postman Collection](./docs-ss/postman/spms.postman_collection.json)
 
-🔗 [View Postman Collection JSON](./docs-ss/postman/spms-postman-collection.json)
 
 			
 		
